@@ -1,0 +1,16 @@
+{
+  "output": {
+    "filePath": "repomix-output.txt"
+  },
+  "ignore": {
+    "customPatterns": [
+      "**/*.sqlite",
+      "**/*.sqlite-journal",
+      "package-lock.json",
+      "dist",
+      "node_modules",
+      "repomix-output.txt",
+      "repomix.config.json"
+    ]
+  }
+}
