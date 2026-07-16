@@ -25,58 +25,61 @@ Project_POS_Maduramart adalah aplikasi POS (Point of Sale) sederhana berbasis No
 
 Jika ingin mencoba atau mengembangkan proyek ini di komputer lokal Anda, ikuti langkah-langkah berikut:
 
-1. **Fork Repository Ini**
+1. **Fork Repository Ini**  
    Klik tombol **Fork** di pojok kanan atas halaman GitHub ini untuk membuat salinan di akun Anda.
 
-2. **Clone Repository**
+2. **Clone Repository**  
    Clone hasil fork tersebut ke komputer lokal (ganti `USERNAME` dengan username GitHub Anda):
+
    ```bash
-   git clone [https://github.com/USERNAME/Project_POS_Maduramart.git](https://github.com/USERNAME/Project_POS_Maduramart.git)
-Masuk ke Folder & Install Dependencies
+   git clone https://github.com/USERNAME/Project_POS_Maduramart.git
+   ```
 
-Bash
-cd Project_POS_Maduramart
-npm install
-Jalankan Aplikasi
+3. **Masuk ke Folder & Install Dependencies**
 
-Bash
-npm run dev
-Akses di Browser
-Buka browser Anda dan akses: http://localhost:3000
+   ```bash
+   cd Project_POS_Maduramart
+   npm install
+   ```
 
-Contoh Alur Penggunaan
-Klik Jalankan Seeder untuk mengisi data dummy awal.
+4. **Jalankan Aplikasi**
 
-Klik Proses Transaksi Kasir untuk mensimulasikan pembuatan transaksi baru.
+   ```bash
+   npm run dev
+   ```
 
-Klik Lihat Laporan Penjualan untuk melihat rekapitulasi hasil transaksi.
+5. **Akses di Browser**  
+   Buka browser Anda dan akses: http://localhost:3000
 
-Struktur Singkat Endpoint API
-POST /api/seed → Membuat data dummy (users, categories, products)
+## Contoh Alur Penggunaan
 
-POST /api/transactions → Memproses transaksi kasir baru
+- Klik **Jalankan Seeder** untuk mengisi data dummy awal.
+- Klik **Proses Transaksi Kasir** untuk mensimulasikan pembuatan transaksi baru.
+- Klik **Lihat Laporan Penjualan** untuk melihat rekapitulasi hasil transaksi.
 
-GET /api/reports/sales → Mengambil data laporan penjualan
+## Struktur Singkat Endpoint API
 
-Catatan Tambahan
-Database menggunakan SQLite lokal (file database akan otomatis terbuat saat aplikasi dijalankan).
+- `POST /api/seed` → Membuat data dummy (users, categories, products)
+- `POST /api/transactions` → Memproses transaksi kasir baru
+- `GET /api/reports/sales` → Mengambil data laporan penjualan
 
-Pastikan Node.js sudah terpasang di komputer Anda sebelum menjalankan proyek.
+## Catatan Tambahan
 
-Jika ingin memodifikasi logika bisnis, rute API, atau UI, Anda bisa melakukan perubahan di dalam folder src/.
+- Database menggunakan SQLite lokal (file database akan otomatis terbuat saat aplikasi dijalankan).
+- Pastikan Node.js sudah terpasang di komputer Anda sebelum menjalankan proyek.
+- Jika ingin memodifikasi logika bisnis, rute API, atau UI, Anda bisa melakukan perubahan di dalam folder `src/`.
 
-Kontribusi & Pengembangan Lebih Lanjut
+## Kontribusi & Pengembangan Lebih Lanjut
+
 Karena proyek ini masih berstatus PoC, pintu kontribusi terbuka sangat lebar! Beberapa hal yang bisa ditingkatkan antara lain:
 
-Validasi data yang lebih ketat menggunakan library seperti Zod atau Joi.
-
-Penambahan fitur autentikasi (Login/Logout) untuk kasir dan admin.
-
-Integrasi ke database yang lebih scalable (misal: PostgreSQL/MySQL).
-
-Perbaikan UI/UX agar lebih interaktif.
+- Validasi data yang lebih ketat menggunakan library seperti Zod atau Joi.
+- Penambahan fitur autentikasi (Login/Logout) untuk kasir dan admin.
+- Integrasi ke database yang lebih scalable (misal: PostgreSQL/MySQL).
+- Perbaikan UI/UX agar lebih interaktif.
 
 Silakan buat Pull Request (PR) jika Anda memiliki peningkatan fitur atau perbaikan bug!
 
-Lisensi
+## Lisensi
+
 Proyek ini bersifat open-source dan dapat digunakan secara bebas sebagai bahan pembelajaran maupun dasar pengembangan lebih lanjut.
